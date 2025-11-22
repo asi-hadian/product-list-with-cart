@@ -184,7 +184,7 @@ function updateCartUI() {
   if (cart.length === 0) {
     cartList.innerHTML = `
    <div class="cart-item-empty">
-        <img src="../assets/images/illustration-empty-cart.svg" class="mx-auto my-8">
+        <img src="./assets/images/illustration-empty-cart.svg" class="mx-auto my-8">
         <p class="text-center text-amber-800 text-lg">Your added items will appear here</p>
       </div>
     `;
