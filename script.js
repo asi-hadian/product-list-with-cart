@@ -11,7 +11,7 @@ const cart = [];
 // render carts------------------------------------------
 window.addEventListener("load", async () => {
   updateCartUI();
-  const res = await fetch("../data/products.json");
+  const res = await fetch("./data/products.json");
   const product = await res.json();
   
   productsList.innerHTML = "";
@@ -33,7 +33,7 @@ window.addEventListener("load", async () => {
             data-name="${item.name}"
             data-image="${item.image.thumbnail}"
               >
-             <img src="../assets/images/icon-add-to-cart.svg"/>
+             <img src="./assets/images/icon-add-to-cart.svg"/>
               <span class="font-bold hover:text-red-700 ml-2"> Add to cart</span>
             </button>
             
@@ -223,7 +223,7 @@ function updateCartUI() {
           <span class="font-bold text-3xl">$${sum.toFixed(2)}</span>
           </div>
               <div class="tree-card flex p-4 justify-center items-center rounded-lg bg-brand-light mt-4">
-                <img src="../assets/images/icon-carbon-neutral.svg">
+                <img src="./assets/images/icon-carbon-neutral.svg">
                 <p class="ml-2 text-lg">
                     This is a <strong class="text-xl">carbon-neutral</strong> delivery
                 </p>
