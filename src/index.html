@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>products list</title>
+  </head>
+  <body>
+    <div
+      class="container max-w-[1200px] grid grid-cols-1 lg:grid-cols-5 gap-4 bg-brand-light p-4 mt-4 rounded-lg shadow-xl"
+    >
+      <h1 class="text-[48px] font-bold mb-8 col-span-5">Desserts</h1>
+      <section
+        class="products col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:col-span-3 gap-4"
+      >
+        <!--All products render here -->
+      </section>
+      <div
+        class="your-cart lg:col-span-2 shadow-md hover:shadow-xl transition-shadow duration-300 bg-white h-[650px] rounded-lg p-8 gap-4 flex flex-col"
+      >
+        <h1 class="cart-title text-red-700 font-bold text-3xl">Your Cart(0)</h1>
+        <div class="cart-item-list overflow-y-auto flex-1">
+          <!-- items add here with js -->
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <img src="../assets/images/icon-order-confirmed.svg" />
+        <h1 class="order-confirm">order confirmed</h1>
+        <p class="header">we hope you enjoy your food!</p>
+        <div class="modal-list">
+          <div class="items">
+            <!-- item add here -->
+          </div>
+          <div class="total-order">
+            <!-- total order -->
+          </div>
+        </div>
+
+        <button class="newOrderBtn">start new order</button>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
