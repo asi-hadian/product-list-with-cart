@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", async () => {
 const productsList = document.querySelector(".products");
 const cartList = document.querySelector(".cart-item-list");
 const yourCart = document.querySelector(".your-cart");
@@ -276,3 +277,4 @@ function showModal() {
             <h2>$${sum.toFixed(2)}</h2>
           `;
 }
+})
